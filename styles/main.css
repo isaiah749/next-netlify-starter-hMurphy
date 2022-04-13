@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
+.title-font {
+    font-family: 'Beau Rivage', cursive;
+}
+
+img {
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: black;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(250, 204, 21);
+}
+
+.scrollToTop {
+    background-color: black;
+    border-radius: 100%;
+    position: fixed;
+    height: 4rem;
+    width: 4rem;
+    bottom: 40px;
+    right: 40px;
+    z-index: 2000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.name-font {
+    font-family: 'Send Flowers', cursive;
+}
+
+.typing {
+    position: relative;
+}
+
+.typing::after {
+    content: "";
+    position: absolute;
+    right: -3px;
+    width: 1px;
+    height: 100%;
+    border-right: 2px solid white;
+    animation: blink 0.7s infinite ease;
+}
+
+@keyframes blink {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@media (min-width: 812px) {
+    .hide-menu {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        align-items: center;
+        padding-bottom: 0;
+        padding-top: 0;
+        position: static;
+        z-index: auto;
+        width: auto;
+        padding-left: 0;
+    }
+    
+}
+
