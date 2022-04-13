@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
     100% {opacity: 1;}
 }
 
-@media (min-width: 812px) {
+/* @media (min-width: 812px) {
     .hide-menu {
         display: none;
     }
@@ -80,5 +80,5 @@ body::-webkit-scrollbar-thumb {
         padding-left: 0;
     }
     
-}
+} */
 
