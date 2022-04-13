@@ -19,17 +19,18 @@ export default function Home() {
   }
   
   return (
-    <div className='h-[100vh] w-full overflow-x-hidden '>
+    <div className='h-[100vh] w-full overflow-x-hidden md:overflow-x-visible '>
       
       <Head>
         <title>HMMurphy - Home</title>
+        
       </Head>
       
 
       <header className="">
         <Navbar toggle={toggle} />
         <div className="">
-          <HamburgerDropdown isOpen={isOpen} toggle={toggle} />
+          {/* <HamburgerDropdown isOpen={isOpen} toggle={toggle} /> */}
         </div>
       </header>
 

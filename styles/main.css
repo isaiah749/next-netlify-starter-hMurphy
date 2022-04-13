@@ -9,6 +9,27 @@ img {
     width: 100%;
 }
 
+html {
+    scrollbar-width: normal;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: black;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgb(250, 204, 21);
+}
+
+body {
+    scrollbar-width: none;
+}
+
 body::-webkit-scrollbar {
     width: 10px;
     background-color: black;
@@ -20,21 +41,6 @@ body {
 
 body::-webkit-scrollbar-thumb {
     background-color: rgb(250, 204, 21);
-}
-
-.scrollToTop {
-    background-color: black;
-    border-radius: 100%;
-    position: fixed;
-    height: 4rem;
-    width: 4rem;
-    bottom: 40px;
-    right: 40px;
-    z-index: 2000;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .hide {
