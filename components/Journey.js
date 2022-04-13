@@ -24,7 +24,7 @@ const Journey = () => {
         }
         if (!titleVisible) {
             titleAnimation.start({
-                scale: .8,
+                scale: 1,
                 opacity: 0,
             })
         }
