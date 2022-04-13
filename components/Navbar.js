@@ -16,7 +16,7 @@ const Navbar = () => {
                     <span className='mr-1 pt-2'>
                         <Image src={logo} alt='logo' height={40} width={40} />
                     </span>
-                    <div className="text-white text-2xl md:text-4xl name-font ml-2 font-semibold">Heather M. Murphy</div>
+                    <div className="text-white pt-[3px] text-2xl md:text-4xl name-font ml-2 font-semibold">Heather M. Murphy</div>
                 </div>
             </a>
       
