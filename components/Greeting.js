@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Greeting = () => {
 	return (
-		<div className='h-[100vh] pt-[4rem] w-full'>
+		<div className='h-[100vh] w-full'>
 
         <div className='relative h-full '>
           <Image src={bannerOne} layout='fill' objectFit='cover' />

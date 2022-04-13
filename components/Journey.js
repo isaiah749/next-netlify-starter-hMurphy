@@ -51,14 +51,14 @@ const Journey = () => {
     }, [textVisible])
 
     return (
-        <div className='h-[70vh] md:h-[65vh] pr-2 relative pt-[2rem] md:pt-[3rem] w-full'>
+        <div ref={textRef} className='h-[65vh] md:h-[65vh] pr-2 relative pt-[2rem] md:pt-[3rem] w-full'>
             
             <div className="flex items-center md:my-8 lg:my-5 justify-center">
                 <div ref={titleRef} className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 mr-5"></div>
                 <motion.div initial='hidden' animate={titleAnimation}>
                     <h1 className="text-center text-4xl text-black sm:text-5xl title-font font-bold ">My Journey</h1>
                 </motion.div>
-                <div ref={textRef} className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 ml-5"></div>
+                <div className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 ml-5"></div>
             </div>
 
             <div className="md:flex md:items-center md:justify-center w-full md:pr-5 md:py-5 pr-2 py-2 ">
