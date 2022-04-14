@@ -28,7 +28,7 @@ const storyRevision = () => {
                     <div className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 ml-5"></div>
             </div>
 
-            <div className="absolute top-1/2 w-full text-center">
+            <div className="absolute top-[45%] w-full text-center">
                 <p className="text-md font-[Poppins] sm:text-lg font-bold">Let me be your guide. </p>
                 <button className="bg-yellow-400 font-[Poppins] rounded-full py-4 px-10 font-bold my-3 hover:shadow-xl active:scale-90 transition text-[1.1rem] duration-500 text-black hover:bg-yellow-300 shadow-lg">Contact me</button>
             </div>
@@ -44,7 +44,7 @@ const storyRevision = () => {
                 <div className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 ml-5"></div>
             </div>
 
-            <section className="w-full lg:w-[85%] border-2 border-white  grid grid-cols-1 md:grid-cols-2 mx-auto p-5 font-[Poppins] ">
+            <section className="w-full lg:w-[85%] border-b-2 border-white  grid grid-cols-1 md:grid-cols-2 mx-auto p-5 font-[Poppins] ">
 
                 <div className="h-[300px] md:h-[500px] w-full relative ">
                         <Image src={bannerOne} layout='fill' className='' objectFit='cover' />
@@ -81,11 +81,8 @@ const storyRevision = () => {
         </div>
 
         <div className="lg:flex w-full lg:-space-x-[15rem] lg:items-center space-y-5 lg:space-y-0 lg:justify-center">
-            <div className="w-full">
+            <div className="w-full pb-2 px-2">
                 <RevisionForm />
-            </div>
-            <div className="h-[400px] md:h-[500px] xl:h-[600px] w-full 2xl:h-[700px] relative ">
-                <Image src={vertTwo} layout='fill' objectFit='contain' />
             </div>
         </div>
 
