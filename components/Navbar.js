@@ -38,11 +38,11 @@ const Navbar = () => {
                 </div>
             </a>
       
-            <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
+            <div onClick={()=>setOpen(!open)} className='text-4xl absolute right-5 top-4 md:top-4 cursor-pointer lg:hidden'>
                 <Image src={menuIcon} height={30} width={30} name={open ? 'close':'menu'} />
             </div>
 
-            <ul className={`pb-12 absolute pt-8 bg-black z-[-1] left-0 w-full md:flex md:items-center md:justify-end md:pb-0 md:w-[max-content] md:pt-0 md:static md:z-20 md:pl-0 pl-2 transition-all duration-500 ease-in ${open ? 'top-10 ':'top-[-320px]'}`}>
+            <ul className={`pb-12 absolute pt-8 bg-black z-[-1] left-0 w-full lg:flex lg:items-center lg:justify-end lg:pb-0 lg:w-[max-content] lg:pt-0 lg:static lg:z-20 lg:pl-0 pl-2 transition-all duration-500 ease-in ${open ? 'top-10 ':'top-[-320px]'}`}>
     
                 <a href="/" className="md:ml-5 text-lg ">
                     <motion.li className="text-yellow-400  hover:text-yellow-200 font-semibold mt-2 md:my-0 duration-500 " initial='hidden' animate='visible' variants={{

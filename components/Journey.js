@@ -51,7 +51,7 @@ const Journey = () => {
     }, [textVisible])
 
     return (
-        <div ref={textRef} className='h-[65vh] md:h-[65vh] pr-2 relative pt-[2rem] md:pt-[3rem] w-full'>
+        <div className='h-[65vh] md:h-[65vh] pr-2 relative pt-[2rem] md:pt-[3rem] w-full'>
             
             <div className="flex items-center md:my-8 lg:my-5 justify-center">
                 <div ref={titleRef} className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 mr-5"></div>
@@ -63,7 +63,7 @@ const Journey = () => {
 
             <div className="md:flex md:items-center md:justify-center w-full md:pr-5 md:py-5 pr-2 py-2 ">
                 
-                <div className="h-[400px] md:h-[500px] xl:h-[600px] w-full 2xl:h-[700px] -mt-[4rem] md:-mt-0 relative ">
+                <div ref={textRef} className="h-[400px] md:h-[500px] xl:h-[600px] w-full 2xl:h-[700px] -mt-[4rem] md:-mt-0 relative ">
                     <Image src={bannerFive} layout='fill' className='rounded-r-full' objectFit='contain' />
                 </div>
 
