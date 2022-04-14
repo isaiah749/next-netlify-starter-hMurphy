@@ -75,7 +75,7 @@ const ServiceOne = () => {
 	);
 
 	return (
-		<div className='h-[100vh] md:h-[70vh] px-2 relative pt-[3rem] w-full'>
+		<div className='h-[max-content] px-2 relative py-[3rem] w-full'>
 			<div className='flex items-center md:my-8 lg:my-5 justify-center'>
 				<div ref={titleRef} className='border-2 border-yellow-400 h-[.25px] w-14 md:w-24 mr-5' />
 				<motion.div initial='hidden' animate={titleAnimation}>

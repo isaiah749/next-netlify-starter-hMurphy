@@ -38,15 +38,15 @@ export default function Home() {
         <Greeting />
       </section>
 
-      <section className="pb-[16rem]">
+      <section className="">
         <ServiceOne />
       </section>
 
-      <section className="pb-[16rem] bg-black ">
+      <section className="bg-black ">
         <ServiceTwo />
       </section>
 
-      <section className="pb-[16rem]">
+      <section className="">
         <Journey />
       </section>
 

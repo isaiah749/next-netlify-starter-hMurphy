@@ -67,12 +67,12 @@ const ServiceTwo = () => {
         console.log('use effect hook, inview = ', textVisible)
     }, [textVisible])
     return (
-        <div className='h-[100vh] md:h-[70vh] px-2 relative pt-[3rem] w-full'>
+        <div className='h-[max-content] px-2 relative py-[3rem] w-full'>
             
             <div className="flex items-center pb-2 md:pb-0 md:my-8 lg:my-5 justify-center">
                 <div ref={titleRef} className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 mr-5"></div>
                 <motion.div initial='hidden' animate={titleAnimation}>
-                    <h1 className="text-center text-3xl text-white sm:text-5xl title-font font-bold ">Rewrite Your Story</h1>
+                    <h1 className="text-center text-2xl text-white sm:text-5xl title-font font-bold ">Rewrite Your Story</h1>
                 
                 </motion.div>
                 <div className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 ml-5"></div>

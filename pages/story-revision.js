@@ -19,7 +19,7 @@ const storyRevision = () => {
         </header>
 
 
-        <div className="relative border-b-2 border-white h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
+        <div className="relative border-b-2 border-white h-[100vh]">
             <Image src={bannerOne} layout='fill' objectFit='cover' />
 
             <div className="flex absolute items-center w-full mx-auto pt-[4.5rem] lg:pt-[5.5rem] md:my-8 lg:my-5 justify-center">
@@ -44,7 +44,7 @@ const storyRevision = () => {
                 <div className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 ml-5"></div>
             </div>
 
-            <section className="w-full lg:w-[85%] border-b-2 border-white  grid grid-cols-1 md:grid-cols-2 mx-auto p-5 font-[Poppins] ">
+            <section className="w-full lg:w-[85%] border-2 border-white  grid grid-cols-1 md:grid-cols-2 mx-auto p-5 font-[Poppins] ">
 
                 <div className="h-[300px] md:h-[500px] w-full relative ">
                         <Image src={bannerOne} layout='fill' className='' objectFit='cover' />
