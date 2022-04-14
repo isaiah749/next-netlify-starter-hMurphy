@@ -9,6 +9,7 @@ import Navbar from '@components/Navbar'
 import ServiceOne from '@components/ServiceOne'
 import ServiceTwo from '@components/ServiceTwo'
 import HamburgerDropdown from '@components/HamburgerDropdown'
+import Footer from '@components/Footer'
 
 export default function Home() {
   
@@ -48,6 +49,10 @@ export default function Home() {
 
       <section className="">
         <Journey />
+      </section>
+
+      <section className=''>
+        <Footer />
       </section>
 
 

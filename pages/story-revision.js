@@ -24,7 +24,7 @@ const storyRevision = () => {
 
             <div className="flex absolute items-center w-full mx-auto pt-[4.5rem] lg:pt-[5.5rem] md:my-8 lg:my-5 justify-center">
                     <div className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 mr-5"></div>
-                    <h1 className="text-center text-3xl text-black sm:text-5xl lg:text-6xl title-font font-bold ">Fairytale Your Life</h1>
+                    <h1 className="text-center text-3xl text-black sm:text-5xl lg:text-6xl title-font font-bold ">Transcendence</h1>
                     <div className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 ml-5"></div>
             </div>
 
@@ -40,7 +40,7 @@ const storyRevision = () => {
 
             <div className="flex items-center w-full mx-auto pb-5 lg:pb-0 pt-[2rem] md:my-4 lg:my-3 justify-center ">
                 <div className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 mr-5"></div>
-                    <h1 className="text-center text-3xl text-white lg:text-5xl title-font font-bold ">About Fairytaling</h1>
+                    <h1 className="text-center text-3xl text-white lg:text-5xl title-font font-bold ">About Manifesting</h1>
                 <div className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 ml-5"></div>
             </div>
 

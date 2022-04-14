@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "image": "/styles/Images/ig-1.jpg"
+    },
+    {
+        "id": "2",
+        "image": "/styles/Images/ig-2.jpg"
+    },
+    {
+        "id": "3",
+        "image": "/styles/Images/ig-3.jpg"
+    },
+    {
+        "id": "4",
+        "image": "/styles/Images/ig-4.jpg"
+    },
+    {
+        "id": "5",
+        "image": "/styles/Images/ig-5.jpg"
+    },
+    {
+        "id": "6",
+        "image": "/styles/Images/ig-6.jpg"
+    },
+    {
+        "id": "7",
+        "image": "/styles/Images/ig-7.jpg"
+    },
+    {
+        "id": "8",
+        "image": "/styles/Images/ig-8.jpg"
+    },
+    {
+        "id": "9",
+        "image": "/styles/Images/ig-9.jpg"
+    }
+]
