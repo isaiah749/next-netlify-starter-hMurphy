@@ -13,7 +13,7 @@ const aboutMe = () => {
 
 
   return (
-    <main className='w-full min-h-screen'>
+    <main className='w-full bg-white min-h-screen'>
         <Head>
             <title>HMMurphy - About</title>
         </Head>

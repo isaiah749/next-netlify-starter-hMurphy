@@ -3,6 +3,7 @@ import Image from 'next/image';
 import vertOne from '../styles/Images/vert1.jpg';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Link from 'next/link'
 
 const ServiceOne = () => {
 	// In View is boolean and is true when in view and false when it is not
@@ -75,7 +76,7 @@ const ServiceOne = () => {
 	);
 
 	return (
-		<div className='h-[max-content] px-2 relative py-[3rem] w-full'>
+		<div className='h-[max-content] bg-white px-2 relative py-[3rem] w-full'>
 			<div className='flex items-center md:my-8 lg:my-5 justify-center'>
 				<div ref={titleRef} className='border-2 border-yellow-400 h-[.25px] w-14 md:w-24 mr-5' />
 				<motion.div initial='hidden' animate={titleAnimation}>
@@ -107,9 +108,12 @@ const ServiceOne = () => {
 							</p>
 
 							<div className='flex w-full items-center justify-center mb-5 '>
-								<button className='font-[Poppins] text-lg md:text-xl border-2 border-yellow-400 py-2 px-4 font-semibold hover:bg-black hover:text-yellow-400 transition duration-500 ml-5 '>
-									Learn More
-								</button>
+								<a href="/elevated-life" className="">
+									<button className='font-[Poppins] text-lg md:text-xl border-2 border-yellow-400 py-2 px-4 font-semibold hover:bg-black hover:text-yellow-400 transition duration-500 ml-5 '>
+										Learn More
+									</button>
+
+								</a>
 							</div>
 						</div>
 					</motion.div>

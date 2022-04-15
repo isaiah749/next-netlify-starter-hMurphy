@@ -28,6 +28,7 @@ html::-webkit-scrollbar-thumb {
 
 body {
     scrollbar-width: none;
+    background-color: black;
 }
 
 body::-webkit-scrollbar {

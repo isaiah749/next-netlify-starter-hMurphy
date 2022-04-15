@@ -30,7 +30,7 @@ const Navbar = () => {
                                 scale: 1,
                                 opacity: 1,
                                 transition: {
-                                    delay: .2
+                                    delay: .3
                                 }
                             },
                         }}
@@ -54,7 +54,7 @@ const Navbar = () => {
                             scale: 1,
                             opacity: 1,
                             transition: {
-                                delay: .2
+                                delay: .3
                             }
                         },
                     }} >Home</motion.li>

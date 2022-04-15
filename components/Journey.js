@@ -51,7 +51,7 @@ const Journey = () => {
     }, [textVisible])
 
     return (
-        <div className='h-[max-content] pr-2 relative py-[2rem] md:py-[3rem] w-full'>
+        <div className='h-[max-content] pr-2 bg-white relative py-[2rem] md:py-[3rem] w-full'>
             
             <div className="flex items-center md:my-8 lg:my-5 justify-center">
                 <div ref={titleRef} className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 mr-5"></div>

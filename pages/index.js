@@ -20,7 +20,7 @@ export default function Home() {
   }
   
   return (
-    <div className='h-[100vh] w-full overflow-x-hidden md:overflow-x-visible '>
+    <div className='h-[100vh] bg-white w-full overflow-x-hidden lg:overflow-x-visible '>
       
       <Head>
         <title>HMMurphy - Home</title>

@@ -95,7 +95,9 @@ const ServiceTwo = () => {
                         <p className="my-4 md:my-8 md:text-lg text-gray-200 max-w-[750px] ml-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum placeat quia soluta rem non consequuntur eveniet, cupiditate tenetur animi aliquid molestias incidunt culpa laborum labore veritatis. Animi incidunt illum architecto.</p>
 
                         <div className="flex w-full items-center xl:-ml-[5rem] justify-center mb-5 ">
-                            <button className="font-[Poppins] text-lg text-yellow-400 md:text-xl border-2 border-yellow-400 py-2 px-4 font-semibold hover:bg-yellow-400 hover:text-black transition duration-500 ml-5 ">Learn More</button>
+                            <a href="/story-revision" className="">
+                                <button className="font-[Poppins] text-lg text-yellow-400 md:text-xl border-2 border-yellow-400 py-2 px-4 font-semibold hover:bg-yellow-400 hover:text-black transition duration-500 ml-5 ">Learn More</button>
+                            </a>
                         </div>
 
                     </motion.div>
