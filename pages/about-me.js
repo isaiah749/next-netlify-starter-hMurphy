@@ -43,9 +43,9 @@ const aboutMe = () => {
                     />
                 </span>
 
-                <div className="border-2 border-yellow-400 h-[.25px] ml-[3rem] lg:ml-[10rem] w-[12rem] lg:w-[28rem] my-6 lg:my-12 "></div>
+                <div className="border-2 border-yellow-400 h-[.25px] ml-[3rem] lg:ml-[10rem] w-[12rem] lg:w-[28rem] my-2 lg:my-12 "></div>
 
-                <h2 className="lg:my-16 my-8 text-center text-gray-400 tracking-wider text-[1.1rem] lg:text-[1.5rem] ">Heather's life exemplifies asymmetrical balance.</h2>
+                <h2 className="lg:my-16 my-6 text-center text-gray-400 tracking-wider text-[1.1rem] lg:text-[1.5rem] ">Heather's life exemplifies asymmetrical balance.</h2>
 
                 <div className="pb-5 lg:-mb-[5rem] ">
                     <p className="text-[.9rem] mx-auto px-[1rem] lg:px-0 lg:pl-[5rem] text-gray-400 py-5 max-w-[600px] ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim quos odit itaque voluptas fuga facere voluptatem. Autem aliquid inventore, delectus quas voluptatibus, maxime totam fugit modi molestiae magni tempore.</p>

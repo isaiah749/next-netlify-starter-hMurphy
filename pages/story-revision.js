@@ -1,12 +1,102 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import bannerOne from '../styles/Images/banner4.jpg'
-import RevisionForm from '../components/RevisionForm'
+import ElevateForm from '../components/RevisionForm'
 import vertTwo from '../styles/Images/personal.jpg'
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
 
 const storyRevision = () => {
+
+    const { ref: titleRef, inView: titleVisible } = useInView();
+    const { ref: textOneRef, inView: textOneVisible } = useInView();
+    const { ref: textTwoRef, inView: textTwoVisible } = useInView();
+    const { ref: titleTwoRef, inView: titleTwoVisible } = useInView();
+
+
+
+
+    const titleAnimation = useAnimation();
+    const textOneAnimation = useAnimation();
+    const textTwoAnimation = useAnimation();
+    const titleTwoAnimation = useAnimation();
+
+
+    // TITLE ANIMATIONS
+    useEffect(() => {
+        if (!titleVisible) {
+            titleAnimation.start({
+                scale: 1,
+                opacity: 0
+            })
+        }
+        if (titleVisible) {
+            titleAnimation.start({
+                opacity: 1,
+                scale: 1,
+                transition: {
+                    delay: 0.2
+                }
+            })
+        }
+    })
+
+    useEffect(() => {
+        if (!titleTwoVisible) {
+            titleTwoAnimation.start({
+                scale: 1,
+                opacity: 0
+            })
+        }
+        if (titleTwoVisible) {
+            titleTwoAnimation.start({
+                opacity: 1,
+                scale: 1,
+                transition: {
+                    delay: 0.2
+                }
+            })
+        }
+    })
+
+    // TEXT ANIMATIONS
+    useEffect(() => {
+        if (textOneVisible) {
+            textOneAnimation.start({
+                x: 0,
+                transition: {
+                    type: 'spring',
+                    duration: 0.9,
+                    bounce: 0.3
+                }
+            })
+        }
+        if (!textOneVisible) {
+            textOneAnimation.start({
+                x: '-100vw'
+            })
+        }
+    })
+
+    useEffect(() => {
+        if (textTwoVisible) {
+            textTwoAnimation.start({
+                x: 0,
+                transition: {
+                    type: 'spring',
+                    duration: 0.9,
+                    bounce: 0.3
+                }
+            })
+        }
+        if (!textTwoVisible) {
+            textTwoAnimation.start({
+                x: '200vw'
+            })
+        }
+    })
 
     const contactSection = useRef(null);
 
@@ -28,8 +118,11 @@ const storyRevision = () => {
             <Image src={bannerOne} layout='fill' objectFit='cover' />
 
             <div className="flex absolute items-center w-full mx-auto pt-[4.5rem] lg:pt-[5.5rem] md:my-8 lg:my-5 justify-center">
-                    <div className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 mr-5"></div>
-                    <h1 className="text-center text-3xl text-black sm:text-5xl lg:text-6xl title-font font-bold ">Transcendence</h1>
+                    <div ref={titleRef} className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 mr-5"></div>
+                    <motion.div initial='hidden' animate={titleAnimation}>
+                        <h1 className="text-center text-3xl text-black sm:text-5xl lg:text-6xl title-font font-bold ">Transendence</h1>
+
+                    </motion.div>
                     <div className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 ml-5"></div>
             </div>
 
@@ -51,29 +144,29 @@ const storyRevision = () => {
 
             <section className="w-full lg:w-[85%] border-b-2 border-white  grid grid-cols-1 md:grid-cols-2 mx-auto p-5 font-[Poppins] ">
 
-                <div className="h-[300px] md:h-[500px] w-full relative ">
+                <div ref={textOneRef} className="h-[300px] md:h-[500px] w-full relative ">
                         <Image src={bannerOne} layout='fill' className='' objectFit='cover' />
                 </div>
 
-                <div className="w-full p-10 text-center">
+                <motion.div animate={textOneAnimation} className="w-full p-10 text-center">
                     <p className="text-lg text-gray-300 lg:mt-16 ">
-                        <span className="text-3xl italic block pb-2 font-semibold text-yellow-400">Recognizing Your Current Path </span>
+                        <span className="text-3xl italic block text-section-one pb-2 font-semibold text-yellow-400">Recognizing Your Current Path </span>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure velit fugit nemo quidem sequi consequuntur, sunt repellendus quasi accusantium numquam? Temporibus blanditiis odio enim quidem nisi voluptatibus iste tempora a.
                     </p>
                     <p className="text-lg text-gray-300  mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sequi iste voluptate ratione itaque iusto, sunt quia ab officiis provident aperiam ipsum temporibus vel animi ut. Aut at molestiae magnam!</p>
                     <button onClick={goToContactSection} className="mt-5 border-2 text-gray-300 border-yellow-400 py-2 text-lg px-4 font-semibold hover:bg-yellow-400 hover:text-black transition duration-500 ">Contact me</button>
-                </div>
+                </motion.div>
 
-
-                <div className="w-full p-10 text-center">
+                <motion.div animate={textTwoAnimation} className="w-full p-10 text-center">
                     <p className="text-lg text-gray-300 lg:mt-16 ">
                         <span className="text-3xl italic block pb-2 font-semibold text-yellow-400">Adjusting To Changes </span>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure velit fugit nemo quidem sequi consequuntur, sunt repellendus quasi accusantium numquam? Temporibus blanditiis odio enim quidem nisi voluptatibus iste tempora a.
                     </p>
                     <p className="text-lg text-gray-300  mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sequi iste voluptate ratione itaque iusto, sunt quia ab officiis provident aperiam ipsum temporibus vel animi ut. Aut at molestiae magnam!</p>
                     <button onClick={goToContactSection} className="mt-5 border-2 text-gray-300 border-yellow-400 py-2 text-lg px-4 font-semibold hover:bg-yellow-400 hover:text-black transition duration-500 ">Contact me</button>
-                </div>
-                <div className="h-[300px] md:h-[500px] w-full relative ">
+                </motion.div>
+
+                <div ref={textTwoRef} className="h-[300px] md:h-[500px] w-full relative ">
                         <Image src={bannerOne} layout='fill' className='' objectFit='cover' />
                 </div>
             </section>
@@ -87,7 +180,7 @@ const storyRevision = () => {
 
         <div ref={contactSection} className="lg:flex w-full pb-5 lg:-space-x-[15rem] lg:items-center space-y-5 lg:space-y-0 lg:justify-center">
             <div className="w-full px-2">
-                <RevisionForm />
+                <ElevateForm />
             </div>
         </div>
 
