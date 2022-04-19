@@ -2,20 +2,11 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import logo from '../styles/Images/logo.webp'
 import data from '../context/images.json'
-import IgPics from './IgPics'
+import Slideshow from './Slideshow'
+import igIcon from '../styles/Icons/ig-icon.svg'
+import Link from 'next/link'
 
 
-// const images = [
-//     '/styles/Images/ig-1.jpg',
-//     '/styles/Images/ig-2.jpg',
-//     '/styles/Images/ig-3.jpg',
-//     '/styles/Images/ig-4.jpg',
-//     '/styles/Images/ig-5.jpg',
-//     '/styles/Images/ig-6.jpg',
-//     '/styles/Images/ig-7.jpg',
-//     '/styles/Images/ig-8.jpg',
-//     '/styles/Images/ig-9.jpg',
-// ]
 
 
 
@@ -25,13 +16,13 @@ const Footer = () => {
     
 
   return (
-    <footer className='h-[max-content] flex-col items-center py-[3rem] justify-center text-white w-full bg-black '>
+    <footer className='h-[max-content] border-t-2 flex-col items-center py-[3rem] justify-center text-white w-full bg-black '>
         
         <div className="w-full flex items-center justify-center">
 
             <div className="flex-col max-w-[500px] min-w-[500px] items-center justify-center ">
-                <div className="flex items-center justify-center">
-                    <Image src={logo} className='' height={60} width={60} />
+                <div className="flex items-center justify-center mb-5 ">
+                    <Image src={logo} className='' height={50} width={50} />
                 </div>
 
                 <h2 className="text-center name-font text-4xl my-3 ">Heather M. Murphy</h2>
@@ -41,15 +32,17 @@ const Footer = () => {
                 <p className="text-lg text-center font-[Poppins] mt-6 ">heathermmurphy@gmail.com</p>
                 <p className="text-lg text-center font-[Poppins] -mt-[5px] ">phone number</p>
 
-                <div className="flex items-center justify-center mt-8">
-                    <Image src={logo} height={30} width={30} />
+                <div className="flex items-center justify-center cursor-pointer mt-8">
+                    <Link href='https://www.instagram.com/hmmmurphy/'>
+                        <Image src={igIcon} className='text-white' height={25} width={25} />
+                    </Link>
                 </div>
             </div>
 
         </div>
             
         <div className="w-full  mt-10 ">
-            <IgPics />
+            <Slideshow />
         </div>
 
 

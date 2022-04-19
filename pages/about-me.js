@@ -7,6 +7,7 @@ import bannerOne from '../styles/Images/banner1.jpg'
 import bannerTwo from '../styles/Images/banner2.jpg'
 import bannerThree from '../styles/Images/banner3.jpg'
 import Typed from 'react-typed'
+import Footer from '@components/Footer'
 
 const aboutMe = () => {
 
@@ -88,10 +89,11 @@ const aboutMe = () => {
             
 
 
-
         </div>
 
-
+        <section className="">
+            <Footer />
+        </section>
 
 
 

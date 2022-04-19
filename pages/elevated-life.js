@@ -7,6 +7,7 @@ import ElevateForm from '../components/RevisionForm'
 import vertTwo from '../styles/Images/personal.jpg'
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
+import Footer from '@components/Footer'
 
 const elevatedLife = () => {
 
@@ -172,17 +173,21 @@ const elevatedLife = () => {
             </section>
         </section>
 
-        <div className="flex items-center w-full mx-auto pb-5 lg:pb-0 pt-[2rem] md:my-4 lg:my-3 justify-center ">
+        <div ref={contactSection} className="flex items-center w-full mx-auto pb-5 lg:pb-0 pt-[2rem] md:my-4 lg:my-3 justify-center ">
             <div className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 mr-5"></div>
                 <h1 className="text-center text-4xl text-white lg:text-5xl title-font font-bold ">Contact Me</h1>
             <div className="border-2 border-yellow-400 h-[.25px] w-14 md:w-24 ml-5"></div>
         </div>
 
-        <div ref={contactSection} className="lg:flex w-full pb-5 lg:-space-x-[15rem] lg:items-center space-y-5 lg:space-y-0 lg:justify-center">
+        <div className="lg:flex w-full pb-5 lg:-space-x-[15rem] lg:items-center space-y-5 lg:space-y-0 lg:justify-center">
             <div className="w-full px-2">
                 <ElevateForm />
             </div>
         </div>
+
+        <section className="">
+            <Footer />
+        </section>
 
 
 
